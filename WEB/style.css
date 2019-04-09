@@ -1,0 +1,38 @@
+body {
+    background: #282a3b;
+    font-family: 'Raleway Light', arial;
+    text-align: center;
+    color: #1ba1a5;
+    font-size: 5vmin;
+}
+
+#temp {
+    height: 40vmin;
+    background: #1ba1a5;
+    color: #282a3b;
+    font-size: 25vmin;
+}
+
+#auto,
+#manual,
+#minus,
+#plus {
+    background: #1ba1a5;
+    color: #282a3b;
+    height: 20vmin;
+    border: #282a3b solid 2px;
+    font-size: 10vmin;
+    margin-bottom: 1vmin;
+}
+
+#normal_temp {
+    font-size: 10vmin;
+}
+
+@font-face {
+    font-family: 'Raleway Light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway Light'), local('Raleway-Light'),
+        url(raleway-light_[allfont.ru].ttf) format('truetype');
+}
