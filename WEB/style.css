@@ -4,6 +4,7 @@ body {
     text-align: center;
     color: #1ba1a5;
     font-size: 5vmin;
+    overflow-x:hidden;
 }
 
 #temp {
@@ -15,8 +16,8 @@ body {
 
 #auto,
 #manual,
-#minus,
-#plus {
+#min,
+#pl {
     background: #1ba1a5;
     color: #282a3b;
     height: 20vmin;
@@ -25,7 +26,20 @@ body {
     margin-bottom: 1vmin;
 }
 
-#normal_temp {
+#min,
+#pl {
+    font-size: 15vmin;
+}
+/* стили кнопок */
+#minus, #plus {
+    background: none;
+    width: 100%;
+    height: 15vmin;
+    border: none;
+}
+
+
+#counter {
     font-size: 10vmin;
 }
 
