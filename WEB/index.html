@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Управление теплицей</title>
 
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="icon" href="favicon.png">
   <!-- Подключаем bootstrap -->
   <link rel="stylesheet" type="text/css" href="scripts/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="scripts/bootstrap-reboot.css">
@@ -23,7 +23,7 @@
     <p>26,4°С</p>
   </div>
   <p>РЕЖИМ УПРАВЛЕНИЯ</p>
-  <div class="row">
+  <div class="row" id="block">
     <div class="col-md-6" id="manual">
       <p>РУЧНОЙ</p>
     </div>
@@ -31,21 +31,34 @@
       <p>АВТО</p>
     </div>
   </div>
-
-  <div class="row">
+  <!-- РУЧНОЕ УПРАВЛЕНИЕ -->
+  <div class="col-md-12" id="ch">
+    <button id="choice">
+      ПРОВЕРКА
+    </button>
+  </div>
+  <!-- АВТОМАТИЧЕСКОЕ УПРАВЛЕНИЕ -->
+  <div class="row" id="ch2">
     <div class="col-md-3" id="min">
-        <button id="minus">-</button>
+      <button id="minus">-</button>
     </div>
     <div class="col-md-6">
-      <p id="counter"></p><p style="margin-top:-3vmin;">°С</p>
+      <p id="counter"></p>
     </div>
     <div class="col-md-3" id="pl">
-        <button id="plus">+</button>
+      <button id="plus">+</button>
     </div>
   </div>
 
-<!-- счетчик -->
+  <!-- ПОГОДА НА УЛИЦЕ -->
+  <p style="font-size:10vmin;color:brown;">На улице<br>29,4°С</p>
+
+  <!-- счетчик -->
   <script type="text/javascript" src="scripts/counter.js"></script>
+  <!-- вывод температуры в реальном времени -->
+  <script type="text/javascript" src="scripts/temp.js"></script>
+  <!-- переключение ручного-автоматического режима -->
+  <script type="text/javascript" src="scripts/choice.js"></script>
 </body>
 
 </html>
