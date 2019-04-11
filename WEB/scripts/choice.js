@@ -1,6 +1,27 @@
-$(function() {
+// УЗНАЕМ ТЕКУЩЕЕ СОСТОЯНИЕ
 
-    $( '#ch' ).hide();
+$( document ).ready(function(){
+
+  $.ajax({
+    type: "GET",
+    url: 'main.php',
+    data: {param:'mode'},
+    success: function(data){
+        if (data == '1') {
+          $( '#ch2' ).hide();
+          $('#manual').css({ "background-color": "brown" });
+        }
+
+        if (data == '2') {
+          $( '#ch' ).hide();
+        $('#auto').css({ "background-color": "brown" });
+          
+        }
+    }
+  });
+});
+
+$(function() {
 
        $('#auto').click(function(){
         $( '#ch' ).hide();
