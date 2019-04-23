@@ -2,8 +2,13 @@
 <html lang="en-US">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8;">
+    <!-- ОТКЛЮЧЕНИЕ ЛЮБОГО МАСШТАБИРОВАНИЯ -->
+  <meta name="viewport" content="user-scalable=no, maximum-scale=1.0" />
   <title>Управление теплицей</title>
+
+ 
+
 
   <link rel="shortcut icon" href="favicon.png">
   <link rel="icon" href="favicon.png">
@@ -15,11 +20,12 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+
 </head>
 
 <body>
-
-  <div class="col-md-12" id="temp">
+<!-- ТЕМПЕРАТУРА В ТЕПЛИЦЕ -->
+  <div id="temp">
   </div>
   <p>РЕЖИМ УПРАВЛЕНИЯ</p>
   <div class="row" id="block">
@@ -42,15 +48,16 @@
       <button id="minus">-</button>
     </div>
     <div class="col-md-6">
-      <p id="counter"></p>
+      <p id="counter"></p><br>
+      <p id="status"></p>
     </div>
     <div class="col-md-3" id="pl">
       <button id="plus">+</button>
     </div>
   </div>
 
-  <!-- ПОГОДА НА УЛИЦЕ -->
-  <p style="font-size:10vmin;color:brown;">На улице:<br><p style="font-size:10vmin;color:brown;" id="tempOut"></p></p>
+ <!-- ТЕМПЕРАТУРА НА УЛИЦЕ -->
+ <p style="font-size:10vmin; color:aliceblue; right: 0; position: absolute; bottom: 0;" id="tempOut"></p>
 
   <!-- счетчик -->
   <script type="text/javascript" src="scripts/counter.js"></script>
@@ -58,6 +65,7 @@
   <script type="text/javascript" src="scripts/temp.js"></script>
   <!-- переключение ручного-автоматического режима -->
   <script type="text/javascript" src="scripts/choice.js"></script>
+
 </body>
 
 </html>

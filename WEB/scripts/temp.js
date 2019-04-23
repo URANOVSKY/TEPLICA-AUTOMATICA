@@ -1,6 +1,6 @@
 $( document ).ready(function(){
 var fn=function(){ 
-    
+    // ТЕМПЕРАТУРА В ТЕПЛИЦЕ
     $.ajax({
         type: "GET",
         url: 'main.php',
@@ -9,7 +9,7 @@ var fn=function(){
             $('#temp').html(data+"°С");
         }
     });
-
+// ТЕМПЕРАТУРА НА УЛИЦЕ
     $.ajax({
         type: "GET",
         url: 'main.php',
@@ -18,7 +18,6 @@ var fn=function(){
             $('#tempOut').html(data+"°С");
         }
     });
-
 
 
     setTimeout(arguments.callee,5000);

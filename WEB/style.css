@@ -13,7 +13,6 @@ body {
     background: #1ba1a5;
     color: #282a3b;
     font-size: 25vmin;
-    margin: 0.7vmin;
 }
 
 #choice {
@@ -49,7 +48,6 @@ body {
     border: none;
 }
 
-
 #counter {
     font-size: 10vmin;
 }
@@ -61,3 +59,4 @@ body {
     src: local('Raleway Light'), local('Raleway-Light'),
         url(raleway-light_[allfont.ru].ttf) format('truetype');
 }
+
